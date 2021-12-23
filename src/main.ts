@@ -8,6 +8,6 @@ export function checkMP(): string {
   }
 }
 
-export function main(): void {
+export default function main(): void {
   print(checkMP());
 }
