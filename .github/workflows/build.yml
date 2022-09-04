@@ -11,7 +11,8 @@ on:
   workflow_dispatch:
 
 env:
-  node-version: "16" # Default version of Node.js for jobs
+  node-version: "16" # Default version of Node.js for jobs, Webpack on Node 18 has an error with hashing as of 2022-09-03
+  # For details: https://stackoverflow.com/questions/69394632/webpack-build-failing-with-err-ossl-evp-unsupported/69394785#69394785
   path: "KoLmafia" # The directory where your assets are generated, should match webpack.config.js
 
 jobs:
